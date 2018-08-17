@@ -6,9 +6,43 @@
  * Made By MaterializeCSS.com
  */
 
+/* Hide on Mobile*/
+.mobile-hide {
+  display: inline;
+}
+
+/* Smartphone Portrait and Landscape */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+  .mobile-hide {
+    display: none;
+  }
+}
+
+/* Hide on Desktop */
+.mobile-show {
+  display: none;
+}
+
+/* Smartphone Portrait and Landscape */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+  .mobile-show {
+    display: inline;
+  }
+}
+
 nav ul a,
 nav .brand-logo {
   color: #ffffff;
+}
+
+a {
+  color: white;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 p {
@@ -23,23 +57,25 @@ p {
   min-height: 380px;
   line-height: 0;
   height: auto;
-  color: rgba(255,255,255,.9);
+  color: rgba(255, 255, 255, .9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
 
-@media only screen and (max-width : 992px) {
+.parallax-container .section {
+  width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
   }
+
   #index-banner .section {
     top: 10%;
   }
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width: 600px) {
   #index-banner .section {
     top: 0;
   }
@@ -48,10 +84,47 @@ p {
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
   font-size: inherit;
 }
 
 footer.page-footer {
   margin: 0;
+}
+
+.link-color {
+  color: #ffee58;
+}
+
+.link-text-color {
+  text-decoration-color: #ffee58;
+}
+
+.bottom-logo {
+  width: 75vw;
+}
+
+.fs12 {
+  font-size: 12px;
+}
+
+#pfp {
+  width: 20%;
+  height: 20%;
+}
+
+/* IDs have more priorities than classes so to override the browser default of not being bold, IDs is a necessity */
+#bold {
+  font-weight: bold;
+}  #bold1 {
+  font-weight: bold;
+}  #bold2 {
+  font-weight: bold;
+}  #bold3 {
+  font-weight: bold;
+}  #bold4 {
+  font-weight: bold;
+}  #bold5 {
+  font-weight: bold;
 }
