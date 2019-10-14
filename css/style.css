@@ -1,3 +1,13 @@
+.gold {
+  background-color: #F8C146;
+}
+
+.pfp {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
 /* Custom Stylesheet */
 /**
  * Use this file to override Materialize files so you can update
